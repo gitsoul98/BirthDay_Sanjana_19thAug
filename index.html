@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday ✨</title>
-
+<link rel="icon" type="image/jpeg" href="./image/favicon.jpg">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -355,6 +355,22 @@
 
     window.addEventListener("load", () => {
       launchConfettiBurst();
+
+      setTimeout(() => {
+        Swal.fire({
+            toast: true,
+            position: "top-end",
+            icon: "success",
+            title: "🕵️ Tip",
+            text: "Curious minds usually prefer a laptop... 😉",
+            showConfirmButton: false,
+            timer: 2200,
+            timerProgressBar: true,
+            background: "#1b1028",
+            color: "#fff"
+        });
+    }, 2000);
+
       setTimeout(() => {
         launchConfettiBurst();
         launchSparkleBurst();
@@ -364,6 +380,8 @@
         launchSparkleBurst();
       }, 1800);
     });
+
+    
 
     document.getElementById("openMsgBtn").addEventListener("click", () => {
       launchConfettiBurst();
@@ -375,7 +393,7 @@
         background: "linear-gradient(135deg,#1b1028,#24163b)",
         color: "#fff",
         showConfirmButton: true,
-        confirmButtonText: "😂 Yeah Whatever",
+        confirmButtonText: " Yeah Yeah Whatever",
         confirmButtonColor: "#ec4899",
         allowOutsideClick: false,
         customClass: {
@@ -500,20 +518,20 @@
 
   <div class="title">Happy Birthday!</div>
 
-  <div class="badge">🎉 Special Message 🎉</div>
+  <!--<div class="badge">🎉 Special Message 🎉</div>-->
 
   <div class="msg">
-    Special thanks for skipping classes... 😂
+    There are a few things I'd like to say... 
+    but maybe some words are better left unspoken.
 
     <br><br>
 
-    Because that's where some of the best memories started. 😎
+    So, I'll simply wish you endless happiness, 
+    good health, success, and a life filled with genuine smiles.
 
     <br><br>
 
-    Stay awesome,<br>
-    keep smiling,<br>
-    and never change.
+    May every year bring you closer to everything your heart hopes for.
 
     🎉✨
   </div>
@@ -526,6 +544,61 @@
         `
       });
     });
+  
+    /* -------------------- Hidden Easter Egg -------------------- */
+
+console.clear();
+
+console.log(
+    "%c🎉 Curious, aren't you?",
+    "color:#ff69b4;font-size:20px;font-weight:bold;"
+);
+
+console.log(
+    "%cIf you're reading this, you've already found the first clue. 👀",
+    "color:#c084fc;font-size:14px;"
+);
+
+console.log(
+    "%c👀 Curious enough to look here?\nType %chelpMe()%c and press Enter...",
+    "color:#c084fc;font-size:14px;",
+    "color:#ffd166;font-size:14px;font-weight:bold;",
+    "color:#c084fc;font-size:14px;"
+);
+
+window.helpMe = () => {
+    console.log("%c🕵️ Hint #1", "color:#facc15;font-size:18px;font-weight:bold;");
+    console.log("The person who made this...");
+    console.log("• Knows you & kinda like you....");
+    console.log("• Didn't want credit.");
+    console.log("• Wanted to make you smile.");
+    console.log("");
+    console.log("Maybe that's enough for today. 🌸");
+};
+
+window.sj = () => {
+    console.clear();
+
+    console.log("%c🎉 You actually found it!", "color:#ff69b4;font-size:24px;font-weight:bold;");
+    console.log("");
+
+    console.log("Wow...");
+    console.log("You must have a pretty good idea of who made this by now. 👀");
+    console.log("");
+
+    console.log("There's no need to say the name.");
+    console.log("If you know, you know. 🙂");
+    console.log("");
+
+    console.log("%cOne last thing...",
+        "color:#ffd166;font-size:18px;font-weight:bold;");
+
+    console.log("Thanks for missing the class. 😂");
+    console.log("");
+
+    console.log("And...");
+    console.log("Happy Birthday once again! 🎂✨");
+};
   </script>
 </body>
 </html>
